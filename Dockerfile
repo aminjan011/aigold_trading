@@ -1,5 +1,6 @@
-FROM python:3.7
+FROM python:3.8-buster
 
+# Tizim bog'liqliklarini o'rnatish
 RUN apt-get update && apt-get install -y \
     build-essential \
     libssl-dev \
@@ -9,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     libc-dev \
     && rm -rf /var/lib/apt/lists/*
 
+# pip va wheel ni yangilash
 RUN pip install --upgrade pip wheel
 
 WORKDIR /app
