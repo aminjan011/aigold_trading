@@ -1,4 +1,4 @@
-import MetaTrader5 as mt5
+import metatrader5 as mt5
 import pandas as pd
 import pandas_ta as ta
 import numpy as np
