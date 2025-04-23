@@ -1,6 +1,5 @@
-FROM python:3.11-slim
+FROM python:3.10-slim
 
-# Tizim bog'liqliklarini o'rnatish
 RUN apt-get update && apt-get install -y \
     build-essential \
     libssl-dev \
