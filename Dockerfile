@@ -1,6 +1,5 @@
-FROM python:3.9
+FROM python:3.8
 
-# Qo'shimcha tizim bog'liqliklarini o'rnatish
 RUN apt-get update && apt-get install -y \
     build-essential \
     libssl-dev \
@@ -9,6 +8,8 @@ RUN apt-get update && apt-get install -y \
     gcc \
     libc-dev \
     && rm -rf /var/lib/apt/lists/*
+
+RUN pip install --upgrade pip wheel
 
 WORKDIR /app
 COPY requirements.txt .
