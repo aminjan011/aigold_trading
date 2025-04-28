@@ -1,1 +1,4 @@
-metatrader5
+ccxt
+pandas
+numpy
+python-telegram-bot
